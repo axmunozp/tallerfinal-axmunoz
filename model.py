@@ -7,6 +7,9 @@ class Animal:
     def hacer_sonido(self):
         pass
 
+    def tipo(self):
+        return self.__class__.__name__
+
 class Perro(Animal):
     def hacer_sonido(self):
         return "Guau Guau!"
@@ -15,10 +18,10 @@ class Gato(Animal):
     def hacer_sonido(self):
         return "Miau!"
 
-class Hurón(Animal):
+class Huron(Animal):
     def hacer_sonido(self):
         return "Eeek Eeek!"
 
-class BoaConstrictor(Animal):
+class Boa(Animal):
     def hacer_sonido(self):
         return "Tsss!"

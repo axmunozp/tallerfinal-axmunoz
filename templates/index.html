@@ -9,7 +9,7 @@
     <h1>Sonidos de Animales</h1>
     <ul>
         {% for animal in animales %}
-            <li>{{ animal._nombre }}: {{ animal.hacer_sonido() }}</li>
+            <li>{{ animal.tipo() }}: {{ animal.hacer_sonido() }}</li>
         {% endfor %}
     </ul>
 </body>
