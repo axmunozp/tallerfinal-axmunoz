@@ -11,7 +11,7 @@ animales = [
 def obtener_sonido_animal(nombre):
     for animal in animales:
         if animal.tipo().lower() == nombre.lower():
-            return jsonify({"nombre": animal.tipo(), "sonido": animal.hacer_sonido()}), 200
+            return jsonify({"nombre":animal._nombre,"tipo": animal.tipo(), "sonido": animal.hacer_sonido()}), 200
     return jsonify({"error": "Animal no encontrado"}), 404
 
 def obtener_animales():
